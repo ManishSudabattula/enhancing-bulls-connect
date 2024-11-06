@@ -41,3 +41,5 @@
    pnpm validate
    pnpm dev
    ```
+
+#### Template credits : https://github.com/laststance/vite-rtk-query
