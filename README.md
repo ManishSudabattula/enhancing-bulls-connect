@@ -32,7 +32,7 @@
    git clone https://github.com/ManishSudabattula/enhancing-bulls-connect.git
    ```
 
-2. - Install [pnpm](https://pnpm.io/installation)
+2. Install [pnpm](https://pnpm.io/installation)
 
 3. Run the app
    ```sh
