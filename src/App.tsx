@@ -5,12 +5,12 @@ import { Routes, Route } from 'react-router-dom'
 import { HistoryRouter } from 'redux-first-history/rr6'
 
 import './features/Counter/index.module.css'
-import Counter from './features/Counter/index'
-import DocumentList from './features/DocumentList'
-import { history, store } from './store'
-import LandingPage from './pages/LandingPage'
+// import Counter from './features/Counter/index'
+// import DocumentList from './features/DocumentList'
 import DashboardPage from './pages/DashboardPage'
+import LandingPage from './pages/LandingPage'
 import SignInPage from './pages/SignInPage'
+import { history, store } from './store'
 
 const App: React.FC = () => {
   return (
