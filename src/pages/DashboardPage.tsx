@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 
 const tabs = ['Home', 'Groups', 'Events', 'Chats']
 
+import NavBar from '../components/NavBar'
+
 const events = [
   { id: 1, title: 'Lunch with a Lawyer', image: 'path_to_image1' },
   { id: 2, title: 'Humane Society of Tampa Bay', image: 'path_to_image2' },
@@ -58,32 +60,8 @@ const DashboardPage: React.FC = () => {
 
   return (
     <div className="dashboard-container min-h-screen bg-gray-50 p-8">
-      {/* Header */}
-      <header className="flex justify-between items-center mb-8">
-        <div className="text-2xl font-bold">BullsConnect</div>
-
-        <nav className="w-full flex justify-center items-center">
-          <div className="nav-tabs relative flex rounded-full p-1">
-            <div
-              className="pill absolute bg-white rounded-full transition-all duration-300"
-              style={pillStyle}
-            />
-
-            {tabs.map((tab, index) => (
-              <button
-                key={tab}
-                ref={(el) => (tabRefs.current[index] = el)}
-                onClick={() => handleTabClick(tab)}
-                className={`z-10 text-lg font-medium px-4 py-2 ${
-                  activeTab === tab ? 'text-black font-bold' : 'text-gray-400' // Inactive tabs set to grey
-                }`}
-              >
-                {tab}
-              </button>
-            ))}
-          </div>
-        </nav>
-      </header>
+      {/* NAVBAR */}
+      <NavBar />
 
       {/* Upcoming Events Section */}
       <section className="mb-12">
