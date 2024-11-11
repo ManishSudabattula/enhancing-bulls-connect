@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
 
-const tabs = ['Home', 'Groups', 'Events', 'Chats']
-
 import NavBar from '../components/NavBar'
 
 const events = [
@@ -16,7 +14,7 @@ const events = [
   { id: 9, title: 'Study Session', image: 'path_to_image9' },
 ]
 
-const DashboardPage: React.FC = () => {
+const HomePage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const visibleCards = 3
   const [activeTab, setActiveTab] = useState('Home')
@@ -43,36 +41,20 @@ const DashboardPage: React.FC = () => {
     return () => clearInterval(interval)
   }, [currentIndex])
 
-  const handleTabClick = (tab: string) => {
-    setActiveTab(tab)
-  }
-
-  useEffect(() => {
-    const activeIndex = tabs.indexOf(activeTab)
-    const activeTabRef = tabRefs.current[activeIndex]
-    if (activeTabRef) {
-      setPillStyle({
-        left: activeTabRef.offsetLeft - 5, // Add offset for centering
-        width: activeTabRef.offsetWidth + 10, // Adjust width with offset
-      })
-    }
-  }, [activeTab])
-
   return (
     <div className="dashboard-container min-h-screen bg-gray-50 p-8">
       {/* NAVBAR */}
       <NavBar />
-
       {/* Upcoming Events Section */}
       <section className="mb-12">
         <h2 className="text-3xl font-bold mb-4">Upcoming Events</h2>
-        <div className="relative flex items-center">
+        <div className="relative flex items-center slide-sec">
           {/* Left Arrow */}
           <button
             onClick={handlePrev}
             className="absolute left-0 z-10 flex items-center justify-center bg-gray-300 w-10 h-10 rounded-full"
           >
-            <div className="transform rotate-45 border-t-2 border-l-2 border-black w-3 h-3"></div>
+            <div className="transform -rotate-45 border-t-2 border-l-2 border-black w-3 h-3"></div>
           </button>
 
           {/* Carousel Container */}
@@ -157,4 +139,4 @@ const DashboardPage: React.FC = () => {
   )
 }
 
-export default DashboardPage
+export default HomePage

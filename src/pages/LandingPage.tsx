@@ -18,7 +18,7 @@ const LandingPage: React.FC = () => {
     // window.location.href =
     //   'https://login.microsoftonline.com/741bf7de-e2e5-46df-8d67-82607df9deaa/oauth2/v2.0/authorize?client_id=e00dc75c-c8bd-4b08-a291-5dfe8b54abbb&redirect_uri=https%3A%2F%2Fnetid.usf.edu%2Fsignin-oidc&response_type=id_token&scope=openid%20profile&response_mode=form_post&nonce=638668600103267078.NmI4MWJkZDEtYWRkYi00NzQ3LWE0YWMtMTQzOGJiYmI1MzNjZjlkMWMxMjQtYjVjMy00Y2I2LWIzYTUtNDc1OThmNjZlYzFj&client_info=1&x-client-brkrver=IDWeb.2.17.4.0&state=CfDJ8LqwDZVxMtFPlpc_1U8sIvYewRABg2zSnY_BOthBkLCm9WH87af27ImawG5OjYzYKLlDCkx7p6KIiPr13D4oGDPV1uL9eDM-dWc2jmFnagmYeGeg9msqtGHQA8PeGhezrskJlgNhhWxESOHE_dTm8j7_xT_YJBfCyVNIox3zKsKont7wDGSeuFsZ1QH9D5fz8WD2lHrDSuYVBxs4vqZZcBhL2_56cRWyIxwWXahTGxg6dpHdagAyO4tXp9dm7HF1uD_q-ePHGHG_TamUnqPPWBLkTGHt-m3yJeZPUrY08py9&x-client-SKU=ID_NET8_0&x-client-ver=7.5.0.0cle'
     dispatch(login())
-    navigate('/dashboard')
+    navigate('/home')
   }
 
   const handleSignOut = () => {

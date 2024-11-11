@@ -150,21 +150,15 @@ section h2 {
   text-decoration: underline;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* Container for Navigation Tabs */
 .nav-tabs {
-  background-color: #d1d1d1;
   display: flex;
   position: relative;
   border-radius: 25px;
-  padding: 0.75rem;
-  height: 2.5rem;
+  padding: 0.5rem;
   align-items: center;
   width: fit-content;
-  margin: 0 auto;
+  height: 45px;
 }
 
 /* Moving Pill Effect */
@@ -175,13 +169,15 @@ section h2 {
   justify-content: center;
   background-color: #ffffff;
   border-radius: 20px;
-  transition: all 0.3s ease;
-  box-shadow: inset -1px -1px 4px 1px rgb(0 0 0 / 50%);
+  box-shadow: outset -1px -1px 4px 1px rgb(0 0 0 / 50%);
   height: 75%;
+  transition:
+    left 1.5s ease-in-out,
+    width 1.5s ease-in-out;
 }
 
 /* Styling for Tab Buttons */
-.nav-tabs button {
+.nav-tabs .tab-button {
   position: relative;
   z-index: 1;
   padding: 0.5rem 1rem;
@@ -191,10 +187,39 @@ section h2 {
   border: none;
   outline: none;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 }
 
-.nav-tabs button.active {
-  color: #000000;
+.nav-tabs .tab-button:hover {
+  color: #000;
+}
+
+/* Active State for Tab Links */
+.nav-tabs .text-black {
   font-weight: bold;
+}
+
+/* Global padding for the main content */
+.dashboard-container {
+  padding-top: 120px; /* Adjust this to add spacing below the navbar */
+}
+
+.nav-div {
+  border: none;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+}
+
+.nav-header {
+  background: none;
+  border: none;
+}
+
+.slide-sec {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
