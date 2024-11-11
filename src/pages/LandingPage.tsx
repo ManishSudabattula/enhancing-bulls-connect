@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Navigate } from 'react-router-dom'
 
 import { login, logout } from '../features/Auth/authSlice'
 import { useAppDispatch, useAppSelector } from '../hooks/redux'
@@ -8,6 +8,11 @@ const LandingPage: React.FC = () => {
   const dispatch = useAppDispatch()
   const isAuthenticated = useAppSelector((state) => state.auth.isAuthenticated)
   const navigate = useNavigate()
+
+  // Redirect to /dashboard if authenticated
+  if (isAuthenticated) {
+    return <Navigate to="/dashboard" replace />
+  }
 
   const handleSignIn = () => {
     // window.location.href =

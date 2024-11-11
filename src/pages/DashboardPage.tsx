@@ -1,6 +1,8 @@
 // src/pages/DashboardPage.tsx
 import React, { useState, useEffect } from 'react'
 
+import NavBar from '../components/NavBar'
+
 const events = [
   { id: 1, title: 'Lunch with a Lawyer', image: 'path_to_image1' },
   { id: 2, title: 'Humane Society of Tampa Bay', image: 'path_to_image2' },
@@ -39,26 +41,8 @@ const DashboardPage: React.FC = () => {
 
   return (
     <div className="dashboard-container min-h-screen bg-gray-50 p-8">
-      {/* Header */}
-      <header className="flex justify-between items-center mb-8">
-        <div className="text-2xl font-bold">BullsConnect</div>
-        <nav className="flex items-center space-x-6">
-          <a href="#" className="text-lg font-medium">
-            Home
-          </a>
-          <a href="#" className="text-lg font-medium">
-            Groups
-          </a>
-          <a href="#" className="text-lg font-medium">
-            Events
-          </a>
-          <a href="#" className="text-lg font-medium">
-            Chats
-          </a>
-          <button className="ml-4 p-2 bg-gray-300 rounded-full">🔍</button>
-          <button className="p-2 bg-gray-300 rounded-full">👤</button>
-        </nav>
-      </header>
+      {/* NAVBAR */}
+      <NavBar />
 
       {/* Upcoming Events Section */}
       <section className="mb-12">
