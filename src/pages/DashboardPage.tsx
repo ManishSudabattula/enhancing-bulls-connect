@@ -1,5 +1,6 @@
-// src/pages/DashboardPage.tsx
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+
+const tabs = ['Home', 'Groups', 'Events', 'Chats']
 
 const events = [
   { id: 1, title: 'Lunch with a Lawyer', image: 'path_to_image1' },
@@ -16,6 +17,9 @@ const events = [
 const DashboardPage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const visibleCards = 3
+  const [activeTab, setActiveTab] = useState('Home')
+  const [pillStyle, setPillStyle] = useState({})
+  const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -37,26 +41,47 @@ const DashboardPage: React.FC = () => {
     return () => clearInterval(interval)
   }, [currentIndex])
 
+  const handleTabClick = (tab: string) => {
+    setActiveTab(tab)
+  }
+
+  useEffect(() => {
+    const activeIndex = tabs.indexOf(activeTab)
+    const activeTabRef = tabRefs.current[activeIndex]
+    if (activeTabRef) {
+      setPillStyle({
+        left: activeTabRef.offsetLeft - 5, // Add offset for centering
+        width: activeTabRef.offsetWidth + 10, // Adjust width with offset
+      })
+    }
+  }, [activeTab])
+
   return (
     <div className="dashboard-container min-h-screen bg-gray-50 p-8">
       {/* Header */}
       <header className="flex justify-between items-center mb-8">
         <div className="text-2xl font-bold">BullsConnect</div>
-        <nav className="flex items-center space-x-6">
-          <a href="#" className="text-lg font-medium">
-            Home
-          </a>
-          <a href="#" className="text-lg font-medium">
-            Groups
-          </a>
-          <a href="#" className="text-lg font-medium">
-            Events
-          </a>
-          <a href="#" className="text-lg font-medium">
-            Chats
-          </a>
-          <button className="ml-4 p-2 bg-gray-300 rounded-full">🔍</button>
-          <button className="p-2 bg-gray-300 rounded-full">👤</button>
+
+        <nav className="w-full flex justify-center items-center">
+          <div className="nav-tabs relative flex rounded-full p-1">
+            <div
+              className="pill absolute bg-white rounded-full transition-all duration-300"
+              style={pillStyle}
+            />
+
+            {tabs.map((tab, index) => (
+              <button
+                key={tab}
+                ref={(el) => (tabRefs.current[index] = el)}
+                onClick={() => handleTabClick(tab)}
+                className={`z-10 text-lg font-medium px-4 py-2 ${
+                  activeTab === tab ? 'text-black font-bold' : 'text-gray-400' // Inactive tabs set to grey
+                }`}
+              >
+                {tab}
+              </button>
+            ))}
+          </div>
         </nav>
       </header>
 
