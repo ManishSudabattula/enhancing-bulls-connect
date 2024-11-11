@@ -5,8 +5,12 @@ module.exports = {
   plugins: [require('@tailwindcss/forms')],
   theme: {
     extend: {
+      colors: {
+        customGreen: '#6AB547',
+      },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['Roboto', 'sans-serif'], // Secondary Font for body
+        heading: ['Poppins', 'sans-serif'], // Primary Font for headings
       },
     },
   },

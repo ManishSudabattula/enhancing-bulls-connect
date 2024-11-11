@@ -4,11 +4,153 @@
 
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  position: relative;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.intro-p {
+  width: 36rem;
+}
+
+.img-box {
+  height: 26rem;
+}
+.stud-img {
+  padding: 20px;
+}
+
+/* Base styles for floating circles */
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 147, 47, 0.271);
+  animation: float linear infinite;
+}
+
+/* Different sizes, positions, and unique durations for each circle */
+.circle1 {
+  width: 100px;
+  height: 100px;
+  top: 10%;
+  left: 20%;
+  animation-duration: 60s;
+  opacity: 0.8;
+}
+
+.circle2 {
+  width: 120px;
+  height: 120px;
+  top: 40%;
+  left: 70%;
+  animation-duration: 70s;
+  opacity: 0.6;
+}
+
+.circle3 {
+  width: 80px;
+  height: 80px;
+  top: 60%;
+  left: 30%;
+  animation-duration: 50s;
+  opacity: 0.7;
+}
+
+/* Keyframes for natural floating animation */
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  25% {
+    transform: translate(30px, -50px) rotate(45deg) scale(1.1);
+  }
+  50% {
+    transform: translate(-50px, 30px) rotate(90deg) scale(1);
+  }
+  75% {
+    transform: translate(40px, 60px) rotate(135deg) scale(0.9);
+  }
+  100% {
+    transform: translate(-30px, -40px) rotate(180deg) scale(1);
+  }
+}
+
+/* General Dashboard Styles */
+.dashboard-container {
+  background-color: #f5f5f5;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+header nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+header button {
+  font-size: 1.25rem;
+  background-color: #e0e0e0;
+}
+
+section h2 {
+  color: #333;
+}
+
+.upcoming-events {
+  display: flex;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.upcoming-events div {
+  background-color: #eee;
+  border-radius: 10px;
+  margin-right: 1rem;
+  min-width: 250px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.news-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.news-container div {
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.news-container h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.news-container h4 {
+  color: #ff6b6b;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.news-container a {
+  color: #0078d4;
+  text-decoration: underline;
 }
