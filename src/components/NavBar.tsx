@@ -15,9 +15,12 @@ const NavBar: React.FC = () => {
   }, [location])
 
   useEffect(() => {
-    const activeIndex = tabs.findIndex(
-      (tab) => `/${tab.toLowerCase()}` === activeTab.toLowerCase(),
-    )
+    const activeIndex = tabs.findIndex((tab) => {
+      if (tab.toLowerCase() === 'groups') {
+        return activeTab.toLowerCase().startsWith('/groups') // Keep 'Groups' active for all group-related paths
+      }
+      return `/${tab.toLowerCase()}` === activeTab.toLowerCase()
+    })
     const activeTabRef = tabRefs.current[activeIndex]
     if (activeTabRef) {
       setPillStyle({
