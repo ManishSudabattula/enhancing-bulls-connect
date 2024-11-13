@@ -6,7 +6,7 @@ const tabs = ['Home', 'Groups', 'Events', 'Chats']
 const NavBar: React.FC = () => {
   const [activeTab, setActiveTab] = useState('/')
   const [pillStyle, setPillStyle] = useState({})
-  const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
+  const tabRefs = useRef<(HTMLAnchorElement | null)[]>([])
   const location = useLocation()
 
   useEffect(() => {
