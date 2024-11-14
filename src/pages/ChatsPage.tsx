@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import NavBar from '../components/NavBar'
 
@@ -16,44 +16,17 @@ interface Chat {
 }
 
 const ChatsPage: React.FC = () => {
-  const [chats] = useState<Chat[]>([
-    {
-      id: 1,
-      name: 'John Doe',
-      avatar: 'https://api.dicebear.com/9.x/lorelei/svg',
-      messages: [
-        {
-          sender: 'John',
-          content: 'Hello, how are you?',
-          timestamp: '10:00 AM',
-        },
-        {
-          sender: 'You',
-          content: 'I am good, thanks! How about you?',
-          timestamp: '10:02 AM',
-        },
-      ],
-    },
-    {
-      id: 2,
-      name: 'Jane Smith',
-      avatar: '',
-      messages: [
-        {
-          sender: 'Jane',
-          content: 'Are we meeting tomorrow?',
-          timestamp: '9:00 AM',
-        },
-        {
-          sender: 'You',
-          content: 'Yes, let’s meet at 10 AM.',
-          timestamp: '9:05 AM',
-        },
-      ],
-    },
-  ])
-  const [selectedChatId, setSelectedChatId] = useState<number>(chats[0].id)
+  const [chats, setChats] = useState<Chat[]>([])
+  const [selectedChatId, setSelectedChatId] = useState<number | null>(null)
   const [newMessage, setNewMessage] = useState('')
+
+  // Load chats from JSON file
+  useEffect(() => {
+    import('../data/chats.json').then((data) => {
+      setChats(data.default)
+      setSelectedChatId(data.default[0]?.id ?? null)
+    })
+  }, [])
 
   const selectedChat = chats.find((chat) => chat.id === selectedChatId)
 
@@ -125,15 +98,17 @@ const ChatsPage: React.FC = () => {
             {selectedChat?.messages.map((message, index) => (
               <div
                 key={index}
-                className={`p-3 rounded-lg ${
+                className={`p-3 rounded-lg w-3/4 ${
                   message.sender === 'You'
-                    ? 'bg-blue-100 self-end'
-                    : 'bg-gray-200 self-start'
+                    ? 'bg-blue-100 ml-auto'
+                    : 'bg-gray-200 mr-auto'
                 }`}
               >
                 <div className="text-sm font-semibold">{message.sender}</div>
                 <p>{message.content}</p>
-                <div className="text-xs text-gray-500">{message.timestamp}</div>
+                <div className="text-xs text-gray-500 text-right">
+                  {message.timestamp}
+                </div>
               </div>
             ))}
           </div>
