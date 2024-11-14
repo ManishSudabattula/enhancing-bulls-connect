@@ -3,78 +3,25 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 
 import NavBar from '../components/NavBar'
-
-interface SocialLinks {
-  facebook: string
-  linkedin: string
-  instagram: string
-}
-
-interface Event {
-  title: string
-  date: string
-  location: string
-}
-
-interface Member {
-  name: string
-}
+import groupsData from '../data/groups.json'
 
 interface GroupDetails {
-  name: string
+  groupID: number
+  groupName: string
+  groupLogin: string
+  groupType: string
+  logoUrl: string
   description: string
   department: string
   campus: string
   website: string
-  socialLinks: SocialLinks
-  events: Event[]
-  members: Member[]
-}
-
-// Mock data for group details
-const groupDetailsData: Record<string, GroupDetails> = {
-  1: {
-    name: 'Office of Graduate Studies',
-    description: 'Supporting graduate students at USF.',
-    department: 'Department',
-    campus: 'Tampa',
-    website: 'https://grad.usf.edu/',
-    socialLinks: {
-      facebook: 'https://www.facebook.com/usfgradstudies',
-      linkedin: 'https://www.linkedin.com/school/usf-grad-studies/',
-      instagram: 'https://www.instagram.com/usfgradstudies/',
-    },
-    events: [
-      { title: 'Orientation', date: 'Jan 15, 2024', location: 'BEH 205' },
-    ],
-    members: [{ name: 'John Doe' }, { name: 'Jane Smith' }],
-  },
-  4: {
-    name: 'Office of International Services',
-    description:
-      'Supporting international students and scholars at the University of South Florida.',
-    department: 'Campus Departments/Offices',
-    campus: 'Tampa',
-    website: 'https://global.usf.edu/',
-    socialLinks: {
-      facebook: 'https://www.facebook.com/USFInternationalServices/',
-      linkedin: 'https://www.linkedin.com/school/usouthflorida/',
-      instagram: 'https://www.instagram.com/usf.edu/',
-    },
-    events: [
-      {
-        title: 'Tax Help Session',
-        date: 'Wed, Nov 13, 2024',
-        location: 'BEH 255',
-      },
-      {
-        title: 'CPT Q&A Session',
-        date: 'Tue, Nov 19, 2024',
-        location: 'Online',
-      },
-    ],
-    members: [{ name: 'John Doe' }, { name: 'Jane Smith' }],
-  },
+  socialLinks: {
+    facebook: string
+    linkedin: string
+    instagram: string
+  }
+  events: Array<{ title: string; date: string; location: string }>
+  members: Array<{ name: string }>
 }
 
 const GroupDetailPage = () => {
@@ -82,12 +29,10 @@ const GroupDetailPage = () => {
   const [group, setGroup] = useState<GroupDetails | null>(null)
 
   useEffect(() => {
-    if (groupId && groupDetailsData[groupId]) {
-      const groupDetails = groupDetailsData[groupId]
-      setGroup(groupDetails)
-    } else {
-      setGroup(null) // Handle the case when the groupId is invalid or not found
-    }
+    const groupDetails = groupsData.find(
+      (group) => group.groupID.toString() === groupId,
+    )
+    setGroup(groupDetails || null) // Set group to null if not found
   }, [groupId])
 
   if (!group) {
@@ -99,7 +44,7 @@ const GroupDetailPage = () => {
       <NavBar />
       <div className="p-5 pt-28 flex flex-col items-center">
         <section className="text-center mb-5">
-          <h1 className="text-3xl mb-2">{group.name}</h1>
+          <h1 className="text-3xl mb-2">{group.groupName}</h1>
           <p className="text-gray-600 text-base max-w-xl mx-auto">
             {group.description}
           </p>
@@ -115,42 +60,32 @@ const GroupDetailPage = () => {
             <p className="my-2 text-sm">
               <strong>Campus:</strong> {group.campus}
             </p>
-            {group.website && (
-              <a
-                href={group.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block mt-3 px-4 py-2 bg-[#007a33] text-white rounded hover:bg-[#005826]"
-              >
-                Visit Website
-              </a>
-            )}
+
+            <a
+              href={
+                group.website
+                  ? group.website
+                  : `https://bullsconnect.usf.edu/${group.groupLogin}`
+              }
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-3 px-4 py-2 bg-[#007a33] text-white rounded hover:bg-[#005826]"
+            >
+              Visit Website
+            </a>
             <div className="mt-5">
               <h3 className="mt-5 text-sm">{'Social Links'}</h3>
-              <a
-                href={group.socialLinks.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block my-1 text-[#007a33] hover:underline"
-              >
-                Facebook
-              </a>
-              <a
-                href={group.socialLinks.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block my-1 text-[#007a33] hover:underline"
-              >
-                LinkedIn
-              </a>
-              <a
-                href={group.socialLinks.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block my-1 text-[#007a33] hover:underline"
-              >
-                Instagram
-              </a>
+              {Object.entries(group.socialLinks).map(([platform, link]) => (
+                <a
+                  key={platform}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block my-1 text-[#007a33] hover:underline"
+                >
+                  {platform.charAt(0).toUpperCase() + platform.slice(1)}
+                </a>
+              ))}
             </div>
           </aside>
 
