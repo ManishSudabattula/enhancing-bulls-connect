@@ -6,7 +6,7 @@ const tabs = ['Home', 'Groups', 'Events', 'Chats']
 const NavBar: React.FC = () => {
   const [activeTab, setActiveTab] = useState('/')
   const [pillStyle, setPillStyle] = useState({})
-  const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
+  const tabRefs = useRef<(HTMLAnchorElement | null)[]>([])
   const location = useLocation()
 
   useEffect(() => {
@@ -15,9 +15,12 @@ const NavBar: React.FC = () => {
   }, [location])
 
   useEffect(() => {
-    const activeIndex = tabs.findIndex(
-      (tab) => `/${tab.toLowerCase()}` === activeTab.toLowerCase(),
-    )
+    const activeIndex = tabs.findIndex((tab) => {
+      if (tab.toLowerCase() === 'groups') {
+        return activeTab.toLowerCase().startsWith('/groups') // Keep 'Groups' active for all group-related paths
+      }
+      return `/${tab.toLowerCase()}` === activeTab.toLowerCase()
+    })
     const activeTabRef = tabRefs.current[activeIndex]
     if (activeTabRef) {
       setPillStyle({

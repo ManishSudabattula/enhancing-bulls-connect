@@ -14,6 +14,7 @@ import EventsPage from './pages/EventsPage'
 import GroupsPage from './pages/GroupsPage'
 import LandingPage from './pages/LandingPage'
 import SignInPage from './pages/SignInPage'
+import GroupDetailPage from './pages/GroupDetailPage' // Import the GroupDetailPage
 import { history, store } from './store'
 
 const ProtectedHome = AuthGuard(HomePage)
@@ -27,6 +28,8 @@ const App: React.FC = () => {
           <Route path="/home" element={<ProtectedHome />} />
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/groups" element={<GroupsPage />} />
+          <Route path="/groups/:groupId" element={<GroupDetailPage />} />{' '}
+          {/* New route */}
           <Route path="/events" element={<EventsPage />} />
           <Route path="/chats" element={<ChatsPage />} />
         </Routes>
