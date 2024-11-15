@@ -4,7 +4,6 @@
 
 body {
   margin: 0;
-  overflow: hidden;
   position: relative;
 }
 
@@ -202,6 +201,8 @@ section h2 {
 /* Global padding for the main content */
 .dashboard-container {
   padding-top: 120px; /* Adjust this to add spacing below the navbar */
+  height: auto; /* Allow page content to grow */
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .nav-div {
@@ -214,12 +215,60 @@ section h2 {
 }
 
 .nav-header {
-  background: none;
   border: none;
+  height: fit-content;
+  background: #006747;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #005e3f 0,
+    #005e3f 2px,
+    transparent 0,
+    transparent 50%
+  );
+  background-size: 32px 32px;
+  background-position:
+    0 0,
+    10px 10px; /* Adjust the alignment */
 }
 
 .slide-sec {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+}
+
+section.flex {
+  margin-bottom: 2rem; /* Add spacing between sections */
+}
+
+.shadow-lg {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.border-r {
+  border-right: 1px solid #e5e7eb; /* Light gray */
+}
+
+.text-purple-600 {
+  color: #6b46c1; /* Purple color */
+}
+
+.text-pink-600 {
+  color: #ed64a6; /* Pink color */
+}
+
+.text-green-600 {
+  color: #48bb78; /* Green color */
+}
+
+.text-blue-600 {
+  color: #4299e1; /* Blue color */
 }

@@ -91,47 +91,67 @@ const HomePage: React.FC = () => {
       </section>
 
       {/* News & Announcements Section */}
-      <section className="grid grid-cols-2 gap-6">
-        {/* Latest News & Announcements */}
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-4">
-            Latest News & Announcements
-          </h3>
-          <div className="text-gray-700">
-            <h4 className="font-bold text-red-600">
-              Hurricane Recovery Resources
-            </h4>
-            <p>
-              Students impacted by the recent hurricanes should visit{' '}
-              <a href="#" className="text-blue-600">
-                Hurricanes | Emergencies | Dean of Students
-              </a>{' '}
-              for resources to help you recover.
-            </p>
-            <h4 className="font-bold text-red-600 mt-4">Write-A-Bull</h4>
-            <p>
-              The Writing Studio is happy to announce a new writing program,
-              Write-A-Bull Feedback Program! This asynchronous tutoring program
-              is available at any stage of your writing process!{' '}
-              <a href="#" className="text-blue-600">
-                Click HERE
-              </a>{' '}
-              to learn more and sign up!
-            </p>
+      <section className="flex flex-col items-center mt-8">
+        <div className="grid grid-cols-2 gap-8 w-full max-w-6xl">
+          {/* Latest News & Announcements */}
+          <div className="bg-white p-6 rounded-lg shadow-lg border">
+            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+              <span role="img" aria-label="speaker">
+                🔊
+              </span>{' '}
+              Latest News & Announcements
+            </h3>
+            <div className="text-gray-700">
+              <div className="mb-4">
+                <h4 className="font-bold text-purple-600 mb-1">
+                  Hurricane Recovery Resources
+                </h4>
+                <p>
+                  Students impacted by the recent hurricanes should visit{' '}
+                  <a href="#" className="text-blue-600 underline">
+                    Hurricanes | Emergencies | Dean of Students | USF
+                  </a>{' '}
+                  for resources to help you recover.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-bold text-pink-600 mb-1">Write-A-Bull</h4>
+                <p>
+                  The Writing Studio announces a new program, Write-A-Bull
+                  Feedback Program!{' '}
+                  <a href="#" className="text-blue-600 underline">
+                    Click HERE
+                  </a>{' '}
+                  to learn more and sign up!
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
 
-        {/* What's Hot Section */}
-        <div className="bg-white p-4 rounded-lg shadow-md">
-          <h3 className="text-xl font-semibold mb-4">What's Hot?</h3>
-          <div className="text-gray-700">
-            <h4 className="font-bold text-green-600">
-              Bulls Nite Out: Outback Adventure
-            </h4>
-            <p>
-              Friday, October 25, 8:00 PM - 10:00 PM at Riverfront Park. Join us
-              for fun activities!
-            </p>
+          {/* What's Hot Section */}
+          <div className="bg-white p-6 rounded-lg shadow-lg border">
+            <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+              <span role="img" aria-label="fire">
+                🔥
+              </span>{' '}
+              What's Hot?
+            </h3>
+            <div className="text-gray-700">
+              <h4 className="font-bold text-green-600 mb-2">
+                Bulls Nite Out: Outback Adventure
+              </h4>
+              <p>
+                Friday, October 25, 8:00 PM - 10:00 PM at Riverfront Park. Join
+                us for fun activities!
+              </p>
+              <div className="mt-4">
+                <img
+                  src="path_to_event_image"
+                  alt="Outback Adventure"
+                  className="w-full h-40 object-cover rounded-lg shadow"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
