@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import NavBar from '../components/NavBar'
 
@@ -17,9 +17,6 @@ const events = [
 const HomePage: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const visibleCards = 3
-  const [activeTab, setActiveTab] = useState('Home')
-  const [pillStyle, setPillStyle] = useState({})
-  const tabRefs = useRef<(HTMLButtonElement | null)[]>([])
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>

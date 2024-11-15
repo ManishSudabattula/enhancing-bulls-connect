@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "avatar": "https://api.dicebear.com/9.x/lorelei/svg",
+    "messages": [
+      {
+        "sender": "John",
+        "content": "Hello, how are you?",
+        "timestamp": "10:00 AM"
+      },
+      {
+        "sender": "You",
+        "content": "I am good, thanks! How about you?",
+        "timestamp": "10:02 AM"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "avatar": "",
+    "messages": [
+      {
+        "sender": "Jane",
+        "content": "Are we meeting tomorrow?",
+        "timestamp": "9:00 AM"
+      },
+      {
+        "sender": "You",
+        "content": "Yes, let’s meet at 10 AM.",
+        "timestamp": "9:05 AM"
+      }
+    ]
+  }
+]

@@ -9,14 +9,16 @@ import './features/Counter/index.module.css'
 // import DocumentList from './features/DocumentList'
 import AuthGuard from './components/AuthGuard'
 import ChatsPage from './pages/ChatsPage'
-import HomePage from './pages/HomePage'
 import EventsPage from './pages/EventsPage'
+import GroupDetailPage from './pages/GroupDetailPage' // Import the GroupDetailPage
 import GroupsPage from './pages/GroupsPage'
+import HomePage from './pages/HomePage'
 import LandingPage from './pages/LandingPage'
 import SignInPage from './pages/SignInPage'
 import { history, store } from './store'
 
 const ProtectedHome = AuthGuard(HomePage)
+const ProtectedChats = AuthGuard(ChatsPage)
 
 const App: React.FC = () => {
   return (
@@ -27,8 +29,10 @@ const App: React.FC = () => {
           <Route path="/home" element={<ProtectedHome />} />
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/groups" element={<GroupsPage />} />
+          <Route path="/groups/:groupId" element={<GroupDetailPage />} />{' '}
+          {/* New route */}
           <Route path="/events" element={<EventsPage />} />
-          <Route path="/chats" element={<ChatsPage />} />
+          <Route path="/chats" element={<ProtectedChats />} />
         </Routes>
       </HistoryRouter>
     </ReduxStoreProvider>

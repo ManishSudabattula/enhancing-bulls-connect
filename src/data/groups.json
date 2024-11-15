@@ -1,0 +1,219 @@
+[
+  {
+    "groupID": 71496,
+    "groupName": "3D HAB-Lab",
+    "groupLogin": "3DHABLab",
+    "groupType": "Student Organization",
+    "logoUrl": "https://static7.campusgroups.com/upload/usf/2023/s1_image_upload_2819487_Intro_page_1_1_108171648.png",
+    "description": "A lab focused on 3D printing and habitat technology.",
+    "department": "Engineering",
+    "campus": "Tampa",
+    "website": "",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/3dhablab",
+      "linkedin": "https://www.linkedin.com/company/3dhablab/",
+      "instagram": "https://www.instagram.com/3dhablab/"
+    },
+    "events": [
+      {
+        "title": "3D Printing Workshop",
+        "date": "Mar 5, 2024",
+        "location": "ENG 101"
+      }
+    ],
+    "members": [
+      {
+        "name": "John Doe"
+      },
+      {
+        "name": "Jane Smith"
+      }
+    ]
+  },
+  {
+    "groupID": 69780,
+    "groupName": "A Life Worth Living",
+    "groupLogin": "ALLCLUB",
+    "groupType": "Student Organization",
+    "logoUrl": "https://static7.campusgroups.com/upload/usf/2022/s1_image_upload_3284234_A_Life_worth_living_9912183.png",
+    "description": "A club focused on mental well-being and support.",
+    "department": "Health & Wellness",
+    "campus": "Tampa",
+    "website": "",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/alifeworthliving",
+      "linkedin": "https://www.linkedin.com/company/alifeworthliving/",
+      "instagram": "https://www.instagram.com/alifeworthliving/"
+    },
+    "events": [
+      {
+        "title": "Mindfulness Workshop",
+        "date": "Feb 10, 2024",
+        "location": "MSC 3700"
+      }
+    ],
+    "members": [
+      {
+        "name": "Alice Johnson"
+      },
+      {
+        "name": "Bob Brown"
+      }
+    ]
+  },
+  {
+    "groupID": 71424,
+    "groupName": "A.I. and Technology in Medicine",
+    "groupLogin": "ATM",
+    "groupType": "Student Organization",
+    "logoUrl": "https://static7.campusgroups.com/upload/usf/2023/s1_image_upload_2819157_artificial_626123136.png",
+    "description": "Exploring the use of AI in medical technologies.",
+    "department": "Computer Science",
+    "campus": "Tampa",
+    "website": "",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/aimedicineusf",
+      "linkedin": "https://www.linkedin.com/company/aimedicineusf/",
+      "instagram": "https://www.instagram.com/aimedicineusf/"
+    },
+    "events": [
+      {
+        "title": "AI in Medicine Symposium",
+        "date": "Apr 15, 2024",
+        "location": "MED 200"
+      }
+    ],
+    "members": [
+      {
+        "name": "Dr. Alan Smith"
+      },
+      {
+        "name": "Dr. Emily Davis"
+      }
+    ]
+  },
+  {
+    "groupID": 57312,
+    "groupName": "Academic Advising (St. Petersburg campus)",
+    "groupLogin": "ACADADVIS",
+    "groupType": "Department",
+    "logoUrl": "",
+    "description": "Providing academic support and advising services.",
+    "department": "Advising",
+    "campus": "St. Petersburg",
+    "website": "",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/usfspadvising",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/usfspadvising/"
+    },
+    "events": [
+      {
+        "title": "Advising Session",
+        "date": "Jan 20, 2024",
+        "location": "Advising Center"
+      }
+    ],
+    "members": [
+      {
+        "name": "Advisor 1"
+      },
+      {
+        "name": "Advisor 2"
+      }
+    ]
+  },
+  {
+    "groupID": 68639,
+    "groupName": "Academic and Cultural Engagement",
+    "groupLogin": "ACE",
+    "groupType": "Department",
+    "logoUrl": "https://static7.campusgroups.com/upload/usf/2022/s1_image_upload_4207866_202010000ACESocial_Overlay_170x170_72811013.png",
+    "description": "Engaging students academically and culturally.",
+    "department": "Student Engagement",
+    "campus": "Tampa",
+    "website": "",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/usface",
+      "linkedin": "https://www.linkedin.com/company/usface/",
+      "instagram": "https://www.instagram.com/usface/"
+    },
+    "events": [
+      {
+        "title": "Cultural Night",
+        "date": "Mar 12, 2024",
+        "location": "MSC 4500"
+      }
+    ],
+    "members": [
+      {
+        "name": "Coordinator 1"
+      },
+      {
+        "name": "Coordinator 2"
+      }
+    ]
+  },
+  {
+    "groupID": 62259,
+    "groupName": "Academic Success Center",
+    "groupLogin": "ASC",
+    "groupType": "Department",
+    "logoUrl": "https://static7.campusgroups.com/upload/usf/2024/s1_image_upload_4618731_Academic_Success_Center_300_x_168_px_1_959427.png",
+    "description": "Helping students achieve academic success.",
+    "department": "Student Services",
+    "campus": "Tampa",
+    "website": "",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/usfasc",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/usfasc/"
+    },
+    "events": [
+      {
+        "title": "Tutoring Session",
+        "date": "Feb 5, 2024",
+        "location": "Library 120"
+      }
+    ],
+    "members": [
+      {
+        "name": "Tutor 1"
+      },
+      {
+        "name": "Tutor 2"
+      }
+    ]
+  },
+  {
+    "groupID": 57195,
+    "groupName": "Academic Success Center (Sarasota-Manatee ...",
+    "groupLogin": "SMACADSCTR",
+    "groupType": "Department",
+    "logoUrl": "https://static7.campusgroups.com/images/default_club_logo_square.png",
+    "description": "Academic support for Sarasota-Manatee campus students.",
+    "department": "Student Services",
+    "campus": "Sarasota-Manatee",
+    "website": "",
+    "socialLinks": {
+      "facebook": "https://www.facebook.com/smacadsc",
+      "linkedin": "",
+      "instagram": "https://www.instagram.com/smacadsc/"
+    },
+    "events": [
+      {
+        "title": "Success Workshop",
+        "date": "Mar 1, 2024",
+        "location": "Room 110"
+      }
+    ],
+    "members": [
+      {
+        "name": "Support Staff 1"
+      },
+      {
+        "name": "Support Staff 2"
+      }
+    ]
+  }
+]
