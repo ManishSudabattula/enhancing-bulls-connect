@@ -19,7 +19,6 @@ field_mappings = {
     "p13": "event_button_label",
     "p14": "event_badges",
     "p15": "tickets_sold_value",
-    # "p16": "checkbox_id",
     "p17": "display_attendees",
     "p18": "event_url",
     "p19": "display_type",
@@ -41,19 +40,28 @@ field_mappings = {
     "p35": "event_flyer_description",
 }
 
+# Define a mapping for campus values
+campus_mapping = {
+    "Campus - Tampa": "tampa",
+    "Campus - Sarasota": "sarasota",
+    "Campus - St Petersburg": "stpetersburg",
+}
+
 # Function to strip HTML tags
 def remove_html_tags(text):
     return re.sub(r'<.*?>', ' ', text) if isinstance(text, str) else text
 
-# Function to process tags with ',' separator
-def process_tags(text):
+# Function to process tags and identify campuses
+def process_tags_and_extract_campuses(text):
     if text:
-        # Remove HTML tags, then add commas between tags
         clean_text = remove_html_tags(text)
-        # Assuming tags are separated by some consistent format in the original HTML
-        tags = re.split(r'  {3,}', clean_text)  # Adjust splitting pattern as needed
-        return ', '.join([tag.strip() for tag in tags if tag.strip()])
-    return text
+        tags = re.split(r'  {3,}', clean_text)  # Split by multiple spaces
+        processed_tags = [tag.strip() for tag in tags if tag.strip()]
+        campuses = [
+            campus_mapping[tag] for tag in processed_tags if tag in campus_mapping
+        ]
+        return processed_tags, campuses
+    return [], []
 
 # Load the raw JSON data
 file_path = './eventsraw.json'
@@ -64,15 +72,24 @@ with open(file_path, 'r') as file:
 processed_data = []
 for event in raw_data:
     processed_event = {}
+    campuses = []  # Initialize the campuses field
+
     for key, value in event.items():
-        # Map field names to more meaningful names, remove HTML from text
-        # new_key = field_mappings.get(key, key)  # Default to original key if no mapping exists
         if key in field_mappings:
             new_key = field_mappings[key]
+
             if new_key == "event_tags":
-                processed_event[new_key] = process_tags(value)  # Process tags specifically
+                tags, campuses = process_tags_and_extract_campuses(value)
+                processed_event[new_key] = ', '.join(tags)  # Join tags with commas
+            elif new_key == "event_image_url":
+                processed_event[new_key] = "https://static7.campusgroups.com" + remove_html_tags(value)
             else:
                 processed_event[new_key] = remove_html_tags(value)
+    
+    # Add the campuses field if campuses are identified
+    if campuses:
+        processed_event["campuses"] = campuses
+
     processed_data.append(processed_event)
 
 # Save the cleaned and formatted data to a new file
@@ -80,4 +97,4 @@ output_path = './formatted_events.json'
 with open(output_path, 'w') as output_file:
     json.dump(processed_data, output_file, indent=4)
 
-print(f"Cleaned and formatted JSON with separated tags saved to {output_path}")
+print(f"Cleaned and formatted JSON saved to {output_path}")
