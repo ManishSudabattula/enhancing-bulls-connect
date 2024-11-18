@@ -66,7 +66,7 @@ const HomePage: React.FC = () => {
                 <div key={event.id} className="w-1/3 p-2 flex-shrink-0">
                   <div className="bg-white p-4 rounded-lg shadow-lg h-60 flex flex-col justify-between">
                     <img
-                      src={event.image}
+                      src="images/bull.png"
                       alt={event.title}
                       className="w-full h-32 object-cover rounded-md mb-2"
                     />
@@ -143,7 +143,7 @@ const HomePage: React.FC = () => {
               </p>
               <div className="mt-4">
                 <img
-                  src="path_to_event_image"
+                  src="images/adventure.png"
                   alt="Outback Adventure"
                   className="w-full h-40 object-cover rounded-lg shadow"
                 />
