@@ -30,7 +30,6 @@ const App: React.FC = () => {
           <Route path="/signin" element={<SignInPage />} />
           <Route path="/groups" element={<GroupsPage />} />
           <Route path="/groups/:groupId" element={<GroupDetailPage />} />{' '}
-          {/* New route */}
           <Route path="/events" element={<EventsPage />} />
           <Route path="/chats" element={<ProtectedChats />} />
         </Routes>

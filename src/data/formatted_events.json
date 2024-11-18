@@ -18,7 +18,7 @@
     "club_login": "DIVSTUDSUCC",
     "club_name": "Division of Student Success",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4264767_music_lessons_1022142741.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4264767_music_lessons_1022142741.png",
     "event_price_range": "",
     "event_button_label": "View",
     "event_badges": " Live  ",
@@ -41,7 +41,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for USF Study number sign 5444 Conducted by the Music Research and Testing Laboratory. Tuesday, 22 October 2024 At 1:00 PM, EDT ( GMT minus 4 ) .",
-    "event_flyer_description": "Flyer for USF Study number sign 5444 Conducted by the Music Research and Testing Laboratory. Tuesday, 22 October 2024 At 1:00 PM, EDT ( GMT minus 4 ) ."
+    "event_flyer_description": "Flyer for USF Study number sign 5444 Conducted by the Music Research and Testing Laboratory. Tuesday, 22 October 2024 At 1:00 PM, EDT ( GMT minus 4 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -55,7 +56,7 @@
     "club_login": "USFWORLD",
     "club_name": "USF World",
     "event_attendees_count": "9",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4604264_Flyer_1_1024102016.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4604264_Flyer_1_1024102016.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -78,7 +79,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for The Global Challenge. Friday, 01 November 2024 At 12:00 PM, EDT ( GMT minus 4 ) .",
-    "event_flyer_description": "Flyer for The Global Challenge. Friday, 01 November 2024 At 12:00 PM, EDT ( GMT minus 4 ) ."
+    "event_flyer_description": "Flyer for The Global Challenge. Friday, 01 November 2024 At 12:00 PM, EDT ( GMT minus 4 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -92,7 +94,7 @@
     "club_login": "CAMPUSRECSP",
     "club_name": "Campus Recreation (St. Petersburg Campus)",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4128578_1_10212432.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4128578_1_10212432.png",
     "event_price_range": "",
     "event_button_label": "View",
     "event_badges": " Live  ",
@@ -115,7 +117,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for 2v2 Women\u2019s Sand Volleyball Tournament. Thursday, 07 November 2024 At 5:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for 2v2 Women\u2019s Sand Volleyball Tournament. Thursday, 07 November 2024 At 5:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for 2v2 Women\u2019s Sand Volleyball Tournament. Thursday, 07 November 2024 At 5:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["stpetersburg"]
   },
   {
     "is_separator": "false",
@@ -129,7 +132,7 @@
     "club_login": "CAMPUSRECSP",
     "club_name": "Campus Recreation (St. Petersburg Campus)",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4128578_1_102124213.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4128578_1_102124213.png",
     "event_price_range": "",
     "event_button_label": "View",
     "event_badges": " Live  ",
@@ -152,7 +155,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for 2v2 Men\u2019s Sand Volleyball Tournament. Thursday, 07 November 2024 At 5:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for 2v2 Men\u2019s Sand Volleyball Tournament. Thursday, 07 November 2024 At 5:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for 2v2 Men\u2019s Sand Volleyball Tournament. Thursday, 07 November 2024 At 5:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["stpetersburg"]
   },
   {
     "is_separator": "false",
@@ -166,7 +170,7 @@
     "club_login": "CCE",
     "club_name": "Caribbean Cultural Exchange (CCE)",
     "event_attendees_count": "6",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4600356_IMG_9350_2jpg_117101253.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4600356_IMG_9350_2jpg_117101253.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -203,7 +207,7 @@
     "club_login": "BYMA",
     "club_name": "Bright Young Minds Alliance",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4591904_IMG_2120_321132758.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4591904_IMG_2120_321132758.jpeg",
     "event_price_range": "",
     "event_button_label": "View",
     "event_badges": " Live  ",
@@ -226,7 +230,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for In-Person Volunteering - Tutoring Local K-8 Students - Fall 2024 ( Week of 11 slash 11-11 slash 15 ) . Monday, 11 November 2024 At 8:00 AM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for In-Person Volunteering - Tutoring Local K-8 Students - Fall 2024 ( Week of 11 slash 11-11 slash 15 ) . Monday, 11 November 2024 At 8:00 AM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for In-Person Volunteering - Tutoring Local K-8 Students - Fall 2024 ( Week of 11 slash 11-11 slash 15 ) . Monday, 11 November 2024 At 8:00 AM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -240,7 +245,7 @@
     "club_login": "CSI",
     "club_name": "Center for Student Involvement",
     "event_attendees_count": "3",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4590164_CG_Reflections_of_Society_bullsconnect_10712375.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4590164_CG_Reflections_of_Society_bullsconnect_10712375.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -263,7 +268,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Centre Gallery Exhibition: Reflections of Society. Tuesday, 12 November 2024 At 10:00 AM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Centre Gallery Exhibition: Reflections of Society. Tuesday, 12 November 2024 At 10:00 AM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Centre Gallery Exhibition: Reflections of Society. Tuesday, 12 November 2024 At 10:00 AM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -277,7 +283,7 @@
     "club_login": "CAMPUSRECSP",
     "club_name": "Campus Recreation (St. Petersburg Campus)",
     "event_attendees_count": "1",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4618916_Fitness_Week_Post_114101935.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4618916_Fitness_Week_Post_114101935.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -300,7 +306,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Fitness Week. Tuesday, 12 November 2024 At 12:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Fitness Week. Tuesday, 12 November 2024 At 12:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Fitness Week. Tuesday, 12 November 2024 At 12:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["stpetersburg"]
   },
   {
     "is_separator": "true",
@@ -321,7 +328,7 @@
     "club_login": "TheatreDance",
     "club_name": "USF School of Theatre and Dance",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2829312_9to_5_Bullsconnect_111395637.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2829312_9to_5_Bullsconnect_111395637.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -344,7 +351,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Audition Call for 9 to 5 - USF Spring 2025 Musical Production. Wednesday, 13 November 2024 At 12:00 AM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Audition Call for 9 to 5 - USF Spring 2025 Musical Production. Wednesday, 13 November 2024 At 12:00 AM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Audition Call for 9 to 5 - USF Spring 2025 Musical Production. Wednesday, 13 November 2024 At 12:00 AM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -358,7 +366,7 @@
     "club_login": "UNICEF",
     "club_name": "UNICEF at USF",
     "event_attendees_count": "1",
-    "event_image_url": "/upload/usf/2022/r2_image_upload_3260442_Screen_Shot_20221013_at_112458_AM_101311254.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2022/r2_image_upload_3260442_Screen_Shot_20221013_at_112458_AM_101311254.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -381,7 +389,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Bull Market. Wednesday, 13 November 2024 At 8:00 AM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Bull Market. Wednesday, 13 November 2024 At 8:00 AM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Bull Market. Wednesday, 13 November 2024 At 8:00 AM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -395,7 +404,7 @@
     "club_login": "BullMC",
     "club_name": "Motorcycle Club at USF",
     "event_attendees_count": "14",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4594894_IMG_0085JPG_115103828.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4594894_IMG_0085JPG_115103828.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -432,7 +441,7 @@
     "club_login": "CLCE",
     "club_name": "Center for Leadership and Civic Engagement (CLCE)",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2826225_Office_Welcome_WebDigital_Graphics_CMS_Smjpg_93105258.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2826225_Office_Welcome_WebDigital_Graphics_CMS_Smjpg_93105258.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -455,7 +464,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for CLCE at Bull Market: Check-in. Wednesday, 13 November 2024 At 9:00 AM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for CLCE at Bull Market: Check-in. Wednesday, 13 November 2024 At 9:00 AM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for CLCE at Bull Market: Check-in. Wednesday, 13 November 2024 At 9:00 AM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -469,7 +479,7 @@
     "club_login": "MSC",
     "club_name": "Marshall Student Center",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2820691_MSC_BullMarket_25_Anniversary_BullsConnect_2jpg_102912554.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2820691_MSC_BullMarket_25_Anniversary_BullsConnect_2jpg_102912554.jpeg",
     "event_price_range": "",
     "event_button_label": "View",
     "event_badges": " Live  ",
@@ -492,7 +502,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Bull Market. Wednesday, 13 November 2024 At 9:00 AM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Bull Market. Wednesday, 13 November 2024 At 9:00 AM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Bull Market. Wednesday, 13 November 2024 At 9:00 AM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -506,7 +517,7 @@
     "club_login": "DIVSTUDSUCC",
     "club_name": "Division of Student Success",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4264767_AfghanPromo_Graphics846x432_anonymousjpg_1023135713.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4264767_AfghanPromo_Graphics846x432_anonymousjpg_1023135713.jpeg",
     "event_price_range": "",
     "event_button_label": "View",
     "event_badges": " Live  ",
@@ -543,7 +554,7 @@
     "club_login": "FirstGen",
     "club_name": "First-Gen Community",
     "event_attendees_count": "144",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2813430_FirstGen_graphic_square_1_1015104413.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2813430_FirstGen_graphic_square_1_1015104413.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -566,7 +577,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "USF number sign FirstGenBulls. Banner for First-Gen Celebration Finale at Tampa Bull Market. Wednesday, 13 November 2024 At 10:00 AM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for First-Gen Celebration Finale at Tampa Bull Market. Wednesday, 13 November 2024 At 10:00 AM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for First-Gen Celebration Finale at Tampa Bull Market. Wednesday, 13 November 2024 At 10:00 AM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -580,7 +592,7 @@
     "club_login": "USFCAM",
     "club_name": "Contemporary Art Museum",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2805347_AndresRamirez_ControlledBurnSugarCaneField_2023_2000jpg_61714102.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2805347_AndresRamirez_ControlledBurnSugarCaneField_2023_2000jpg_61714102.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -617,7 +629,7 @@
     "club_login": "CST",
     "club_name": "Center for Career & Professional Development - Tampa campus (formerly Career Services)",
     "event_attendees_count": "38",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2808932_Career_Fairjpg_101795948.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2808932_Career_Fairjpg_101795948.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -640,7 +652,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Business, Communications and Logistics Career Fair ( Rescheduled ) . Wednesday, 13 November 2024 At 11:00 AM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Business, Communications and Logistics Career Fair ( Rescheduled ) . Wednesday, 13 November 2024 At 11:00 AM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Business, Communications and Logistics Career Fair ( Rescheduled ) . Wednesday, 13 November 2024 At 11:00 AM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -654,7 +667,7 @@
     "club_login": "CST",
     "club_name": "Center for Career & Professional Development - Tampa campus (formerly Career Services)",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2966698_career_express_119134542.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2966698_career_express_119134542.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -677,7 +690,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Career Express Drop-In. Wednesday, 13 November 2024 At 12:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Career Express Drop-In. Wednesday, 13 November 2024 At 12:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Career Express Drop-In. Wednesday, 13 November 2024 At 12:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -691,7 +705,7 @@
     "club_login": "CGSO",
     "club_name": "Criminology Graduate Student Organization (CGSO)",
     "event_attendees_count": "4",
-    "event_image_url": "/images/groups/professional-02.png",
+    "event_image_url": "https://static7.campusgroups.com/images/groups/professional-02.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Live  ",
@@ -728,7 +742,7 @@
     "club_login": "CLCE",
     "club_name": "Center for Leadership and Civic Engagement (CLCE)",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2021/r2_image_upload_2436691_USFMarshallCenterjpg_69152051.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2021/r2_image_upload_2436691_USFMarshallCenterjpg_69152051.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -765,7 +779,7 @@
     "club_login": "ROTARACT",
     "club_name": "Rotaract",
     "event_attendees_count": "8",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4102980_download_42414390.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4102980_download_42414390.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -788,7 +802,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Mort Park Food Pantry Volunteering. Wednesday, 13 November 2024 At 2:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Mort Park Food Pantry Volunteering. Wednesday, 13 November 2024 At 2:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Mort Park Food Pantry Volunteering. Wednesday, 13 November 2024 At 2:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa", "stpetersburg"]
   },
   {
     "is_separator": "false",
@@ -802,7 +817,7 @@
     "club_login": "EDABROAD",
     "club_name": "Education Abroad",
     "event_attendees_count": "4",
-    "event_image_url": "/upload/usf/2021/r2_image_upload_2825690_image_62511544.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2021/r2_image_upload_2825690_image_62511544.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -825,7 +840,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Study Abroad Application and Advising Workshop. Wednesday, 13 November 2024 At 2:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Study Abroad Application and Advising Workshop. Wednesday, 13 November 2024 At 2:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Study Abroad Application and Advising Workshop. Wednesday, 13 November 2024 At 2:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -839,7 +855,7 @@
     "club_login": "NSE",
     "club_name": "New Student Experience (St. Petersburg campus)",
     "event_attendees_count": "7",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4348274_TieDye_Flyer_111215420.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4348274_TieDye_Flyer_111215420.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -862,7 +878,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Vibin Tie Dye. Wednesday, 13 November 2024 At 2:30 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Vibin Tie Dye. Wednesday, 13 November 2024 At 2:30 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Vibin Tie Dye. Wednesday, 13 November 2024 At 2:30 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["stpetersburg"]
   },
   {
     "is_separator": "false",
@@ -876,7 +893,7 @@
     "club_login": "BMES",
     "club_name": "Biomedical Engineering Society",
     "event_attendees_count": "2",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4184065_WhatsApp_Image_20241113_at_095658_b57f1c16jpg_111395936.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4184065_WhatsApp_Image_20241113_at_095658_b57f1c16jpg_111395936.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -913,7 +930,7 @@
     "club_login": "USFPreHealthProfessionsAdvising",
     "club_name": "USF Pre-Health Professions Advising",
     "event_attendees_count": "6",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2816701_Copy_of_Fall_2024_Application_Series_MSC_LCD_1_114122729.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2816701_Copy_of_Fall_2024_Application_Series_MSC_LCD_1_114122729.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -950,7 +967,7 @@
     "club_login": "GRADSTUDIES",
     "club_name": "Office of Graduate Studies",
     "event_attendees_count": "1",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4615179_Writing_Wednesdays_Instagram_Postjpg_820152711.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4615179_Writing_Wednesdays_Instagram_Postjpg_820152711.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -973,7 +990,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Writing Wednesday. Wednesday, 13 November 2024 At 3:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Writing Wednesday. Wednesday, 13 November 2024 At 3:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Writing Wednesday. Wednesday, 13 November 2024 At 3:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -987,7 +1005,7 @@
     "club_login": "FES",
     "club_name": "Florida Engineering Society",
     "event_attendees_count": "1",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4276968_fes_logojpg_111272838.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4276968_fes_logojpg_111272838.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1010,7 +1028,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for FES Meeting Nov. 13. Wednesday, 13 November 2024 At 3:30 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for FES Meeting Nov. 13. Wednesday, 13 November 2024 At 3:30 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for FES Meeting Nov. 13. Wednesday, 13 November 2024 At 3:30 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -1024,7 +1043,7 @@
     "club_login": "amateurradio",
     "club_name": "Amateur Radio Club at USF",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2805328_IMG_3125jpg_4554110.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2805328_IMG_3125jpg_4554110.jpeg",
     "event_price_range": "",
     "event_button_label": "View",
     "event_badges": " Today  ",
@@ -1047,7 +1066,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Amateur Radio Club Weekly Meeting. Wednesday, 13 November 2024 At 3:30 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Tune In! Join us for our weekly Amateur Radio Club Meetings! Club room in ENB412 on Wednesdays from 3:30 to 6:00pm. Flyer for Amateur Radio Club Weekly Meeting. Wednesday, 13 November 2024 At 3:30 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Tune In! Join us for our weekly Amateur Radio Club Meetings! Club room in ENB412 on Wednesdays from 3:30 to 6:00pm. Flyer for Amateur Radio Club Weekly Meeting. Wednesday, 13 November 2024 At 3:30 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -1061,7 +1081,7 @@
     "club_login": "Scientista",
     "club_name": "Scientista USF Chapter",
     "event_attendees_count": "8",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_3239165_IMG_1046jpg_11614331.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_3239165_IMG_1046jpg_11614331.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1084,7 +1104,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Holiday Card Making and Cookie Decorating. Wednesday, 13 November 2024 At 3:45 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Holiday Card Making and Cookie Decorating. Wednesday, 13 November 2024 At 3:45 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Holiday Card Making and Cookie Decorating. Wednesday, 13 November 2024 At 3:45 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -1098,7 +1119,7 @@
     "club_login": "AAF",
     "club_name": "American Advertising Federation Student Organization at the University of South Florida",
     "event_attendees_count": "2",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4281916_IMG_9573PNG_1111191026.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4281916_IMG_9573PNG_1111191026.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1121,7 +1142,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for AAF - Portfolio Building w slash Denver Ad School. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for AAF - Portfolio Building w slash Denver Ad School. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for AAF - Portfolio Building w slash Denver Ad School. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -1135,7 +1157,7 @@
     "club_login": "UGSStPete",
     "club_name": "Undergraduate Studies at USF St. Petersburg",
     "event_attendees_count": "2",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4604996_45_Virtual_Group_Advising__1112193427.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4604996_45_Virtual_Group_Advising__1112193427.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1158,7 +1180,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for College of Business Group Advising ( Virtual 4 to 5 PM ) . Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for College of Business Group Advising ( Virtual 4 to 5 PM ) . Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for College of Business Group Advising ( Virtual 4 to 5 PM ) . Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["stpetersburg"]
   },
   {
     "is_separator": "false",
@@ -1172,7 +1195,7 @@
     "club_login": "FirstGen",
     "club_name": "First-Gen Community",
     "event_attendees_count": "32",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4604515_TriAlphaCeremony860jpg_1011124727.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4604515_TriAlphaCeremony860jpg_1011124727.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1195,7 +1218,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for First-Gen Honor Society Information Session. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for First-Gen Honor Society Information Session. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for First-Gen Honor Society Information Session. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa", "stpetersburg"]
   },
   {
     "is_separator": "false",
@@ -1209,7 +1233,7 @@
     "club_login": "CAMPUSRECSP",
     "club_name": "Campus Recreation (St. Petersburg Campus)",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4618916_BullFit_Basics_1112152323.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4618916_BullFit_Basics_1112152323.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1232,7 +1256,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Fitness Week: Free In-Body. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Fitness Week: Free In-Body. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Fitness Week: Free In-Body. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["stpetersburg"]
   },
   {
     "is_separator": "false",
@@ -1246,7 +1271,7 @@
     "club_login": "CLCE",
     "club_name": "Center for Leadership and Civic Engagement (CLCE)",
     "event_attendees_count": "1",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_3725617_Post_Election_Destress_2024_116135443.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_3725617_Post_Election_Destress_2024_116135443.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1269,7 +1294,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Post Election De-Stress. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Post Election De-Stress. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Post Election De-Stress. Wednesday, 13 November 2024 At 4:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -1283,7 +1309,7 @@
     "club_login": "Wrestle",
     "club_name": "Wrestling club at USF",
     "event_attendees_count": "0",
-    "event_image_url": "/upload/usf/2023/r2_club_71356_3281225.jpg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2023/r2_club_71356_3281225.jpg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1320,7 +1346,7 @@
     "club_login": "GLOBE",
     "club_name": "Global Leaders Outreach for a Better Environment ",
     "event_attendees_count": "26",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4589937_An_evening_with_the_103113615.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4589937_An_evening_with_the_103113615.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1343,7 +1369,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for An Evening with Ecosphere Restoration Institute. Wednesday, 13 November 2024 At 5:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for An Evening with Ecosphere Restoration Institute. Wednesday, 13 November 2024 At 5:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for An Evening with Ecosphere Restoration Institute. Wednesday, 13 November 2024 At 5:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["tampa"]
   },
   {
     "is_separator": "false",
@@ -1357,7 +1384,7 @@
     "club_login": "CCLC",
     "club_name": "Chinese Culture and Language Club",
     "event_attendees_count": "9",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_2971694_20240110193737_IMG_0128JPG_111172147.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_2971694_20240110193737_IMG_0128JPG_111172147.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1394,7 +1421,7 @@
     "club_login": "PUPPYCLUB",
     "club_name": "Puppy Love Club (St. Petersburg campus)",
     "event_attendees_count": "2",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4596805_1113_basics_2_118114315.png",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4596805_1113_basics_2_118114315.png",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
@@ -1417,7 +1444,8 @@
     "all_results_hidden": "False",
     "is_hybrid": "",
     "event_photo_description": "Banner for Puppy Basics. Wednesday, 13 November 2024 At 5:00 PM, EST ( GMT minus 5 ) .",
-    "event_flyer_description": "Flyer for Puppy Basics. Wednesday, 13 November 2024 At 5:00 PM, EST ( GMT minus 5 ) ."
+    "event_flyer_description": "Flyer for Puppy Basics. Wednesday, 13 November 2024 At 5:00 PM, EST ( GMT minus 5 ) .",
+    "campuses": ["stpetersburg"]
   },
   {
     "is_separator": "false",
@@ -1431,7 +1459,7 @@
     "club_login": "BusDevClub",
     "club_name": "Business Development Club",
     "event_attendees_count": "8",
-    "event_image_url": "/upload/usf/2024/r2_image_upload_4602261_8jpg_829191957.jpeg",
+    "event_image_url": "https://static7.campusgroups.com/upload/usf/2024/r2_image_upload_4602261_8jpg_829191957.jpeg",
     "event_price_range": "FREE",
     "event_button_label": "Register",
     "event_badges": " Today  ",
