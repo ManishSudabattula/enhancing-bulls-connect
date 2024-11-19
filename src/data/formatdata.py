@@ -1,7 +1,8 @@
 import json
 import re
+from datetime import datetime
 
-# Define a mapping from cryptic field names to more readable names
+# Define mappings
 field_mappings = {
     "p0": "is_separator",
     "p1": "event_id",
@@ -39,62 +40,113 @@ field_mappings = {
     "p34": "event_photo_description",
     "p35": "event_flyer_description",
 }
-
-# Define a mapping for campus values
 campus_mapping = {
     "Campus - Tampa": "tampa",
     "Campus - Sarasota": "sarasota",
     "Campus - St Petersburg": "stpetersburg",
 }
 
-# Function to strip HTML tags
-def remove_html_tags(text):
-    return re.sub(r'<.*?>', ' ', text) if isinstance(text, str) else text
 
-# Function to process tags and identify campuses
-def process_tags_and_extract_campuses(text):
+# Remove HTML tags and unnecessary characters
+def clean_text(text):
+    if isinstance(text, str):
+        # Remove HTML tags
+        text = re.sub(r"<.*?>", " ", text)
+        # Replace common HTML entities with their equivalents
+        text = text.replace("&ndash;", "-").replace("&nbsp;", " ")
+    return text
+
+
+# Process tags and identify campuses
+def process_tags_and_campuses(text):
     if text:
-        clean_text = remove_html_tags(text)
-        tags = re.split(r'  {3,}', clean_text)  # Split by multiple spaces
-        processed_tags = [tag.strip() for tag in tags if tag.strip()]
-        campuses = [
-            campus_mapping[tag] for tag in processed_tags if tag in campus_mapping
+        # Split and clean tags
+        tags = [
+            tag.strip() for tag in re.split(r" {2,}", clean_text(text)) if tag.strip()
         ]
+        # Separate campuses and other tags
+        campuses = [campus_mapping[tag] for tag in tags if tag in campus_mapping]
+        processed_tags = [tag for tag in tags if tag not in campus_mapping]
         return processed_tags, campuses
     return [], []
 
-# Load the raw JSON data
-file_path = './eventsraw.json'
-with open(file_path, 'r') as file:
+
+# Parse event dates
+def parse_event_dates(dates_text):
+    if not dates_text:
+        return None, None
+
+    # Split and clean the input
+    dates = re.split(r"\s*[-–]\s*", clean_text(dates_text).strip())
+    if len(dates) != 2:
+        return None, None
+
+    try:
+        # Ensure both dates have ":00" if minutes are missing
+        for i in range(2):
+            if ":" not in dates[i].strip():
+                parts = dates[i].strip().rsplit(" ", 1)
+                dates[i] = f"{parts[0]}:00 {parts[1]}"
+
+        # Parse start_time
+        start_time = datetime.strptime(dates[0], "%a, %b %d, %Y %I:%M %p")
+
+        # Handle end_time
+        if re.match(r'^\d{1,2}(:\d{2})? [APap][Mm]$', dates[1].strip()):  # Only time, e.g., "4 PM"
+            end_time_str = f"{start_time.strftime('%a, %b %d, %Y')} {dates[1].strip()}"
+            end_time = datetime.strptime(end_time_str, "%a, %b %d, %Y %I:%M %p")
+        else:  # Full datetime string
+            end_time = datetime.strptime(dates[1], "%a, %b %d, %Y %I:%M %p")
+
+        # Return ISO 8601 formatted strings
+        return start_time.isoformat(), end_time.isoformat()
+    except ValueError as e:
+        print("Parsing Error: ", e)
+        # Return original parts if parsing fails
+        return dates[0], dates[1]
+
+
+# Process raw JSON data
+def process_events(raw_events):
+    processed_events = []
+    for event in raw_events:
+        processed_event = {}
+        campuses = []
+
+        for key, value in event.items():
+            if key in field_mappings:
+                new_key = field_mappings[key]
+                if new_key == "event_tags":
+                    tags, campuses = process_tags_and_campuses(value)
+                    processed_event[new_key] = ", ".join(tags)
+                elif new_key == "event_image_url":
+                    processed_event[new_key] = (
+                        "https://static7.campusgroups.com" + clean_text(value)
+                    )
+                elif new_key == "event_dates":
+                    start_time, end_time = parse_event_dates(value)
+                    processed_event["start_time"] = start_time
+                    processed_event["end_time"] = end_time
+                else:
+                    processed_event[new_key] = clean_text(value)
+
+        if campuses:
+            processed_event["campuses"] = campuses
+
+        processed_events.append(processed_event)
+    return processed_events
+
+
+# Load, process, and save data
+file_path = "./eventsraw.json"
+output_path = "./formatted_events.json"
+
+with open(file_path, "r") as file:
     raw_data = json.load(file)
 
-# Process each event entry
-processed_data = []
-for event in raw_data:
-    processed_event = {}
-    campuses = []  # Initialize the campuses field
+processed_data = process_events(raw_data)
 
-    for key, value in event.items():
-        if key in field_mappings:
-            new_key = field_mappings[key]
-
-            if new_key == "event_tags":
-                tags, campuses = process_tags_and_extract_campuses(value)
-                processed_event[new_key] = ', '.join(tags)  # Join tags with commas
-            elif new_key == "event_image_url":
-                processed_event[new_key] = "https://static7.campusgroups.com" + remove_html_tags(value)
-            else:
-                processed_event[new_key] = remove_html_tags(value)
-    
-    # Add the campuses field if campuses are identified
-    if campuses:
-        processed_event["campuses"] = campuses
-
-    processed_data.append(processed_event)
-
-# Save the cleaned and formatted data to a new file
-output_path = './formatted_events.json'
-with open(output_path, 'w') as output_file:
+with open(output_path, "w") as output_file:
     json.dump(processed_data, output_file, indent=4)
 
 print(f"Cleaned and formatted JSON saved to {output_path}")

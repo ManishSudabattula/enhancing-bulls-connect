@@ -21,7 +21,7 @@ const CampusCard: React.FC<CampusCardProps> = ({ campus, onClick }) => {
 
   return (
     <div
-      className="cursor-pointer border rounded-lg shadow-md hover:shadow-lg transition"
+      className="cursor-pointer border rounded-lg shadow-md hover:shadow-lg transition flex flex-col items-center h-full"
       onClick={() => onClick(campus.id)}
       onKeyPress={handleKeyPress}
       role="button"
@@ -31,7 +31,7 @@ const CampusCard: React.FC<CampusCardProps> = ({ campus, onClick }) => {
       <img
         src={campus.image}
         alt={campus.name}
-        className="rounded-t-lg w-full"
+        className="rounded-t-lg w-full h-48 object-cover"
       />
       <p className="text-lg font-semibold text-center p-4">{campus.name}</p>
     </div>
