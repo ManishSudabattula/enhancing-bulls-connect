@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import Calendar from 'react-calendar'
+import { Pagination, Navigation } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 import 'react-calendar/dist/Calendar.css'
 import AdvancedFilter from '../components/AdvancedFilter'
@@ -121,45 +126,46 @@ const EventsPage: React.FC = () => {
         </div>
       ) : (
         <div>
-          <header className="events-header">
-            <div className="left">
-              <div className="flex items-center space-x-2">
-                <label htmlFor="campus-select" className="font-medium">
-                  Campus:
-                </label>
-                <select
-                  id="campus-select"
-                  value={selectedCampus}
-                  onChange={(e) => handleCampusChange(e.target.value)}
-                  className="border rounded-md px-2 py-1"
-                >
-                  {campusesData.map((campus) => (
-                    <option key={campus.id} value={campus.id}>
-                      {campus.name}
-                    </option>
-                  ))}
-                </select>
-              </div>
+          <header className="bg-white border-b border-gray-200 px-8 py-4 flex justify-between items-center">
+            {/* Left Section */}
+            <div className="flex items-center gap-4">
+              <label htmlFor="campus-select" className="font-medium">
+                Campus:
+              </label>
+              <select
+                id="campus-select"
+                value={selectedCampus}
+                onChange={(e) => handleCampusChange(e.target.value)}
+                className="border border-gray-300 rounded-md px-4 py-2 text-sm"
+              >
+                {campusesData.map((campus) => (
+                  <option key={campus.id} value={campus.id}>
+                    {campus.name}
+                  </option>
+                ))}
+              </select>
             </div>
 
-            <div className="right">
-              <button className="bg-gray-200 text-black px-4 py-2 rounded-md">
+            {/* Right Section */}
+            <div className="flex items-center gap-4">
+              <button className="bg-gray-200 text-black px-4 py-2 rounded-md text-sm hover:bg-gray-300 transition">
                 Subscribe
               </button>
-              <button className="bg-gray-200 text-black px-4 py-2 rounded-md">
+              <button className="bg-gray-200 text-black px-4 py-2 rounded-md text-sm hover:bg-gray-300 transition">
                 Sync
               </button>
-              <button className="bg-gray-200 text-black px-4 py-2 rounded-md">
+              <button className="bg-gray-200 text-black px-4 py-2 rounded-md text-sm hover:bg-gray-300 transition">
                 Download
               </button>
               <button
                 onClick={toggleCalendar}
-                className="bg-green-600 text-white px-4 py-2 rounded-md"
+                className="bg-green-600 text-white px-4 py-2 rounded-md text-sm hover:bg-green-700 transition"
               >
                 Events Calendar
               </button>
             </div>
           </header>
+
           {/* Filter Overlay */}
           {showAdvancedFilter && (
             <AdvancedFilter
@@ -175,38 +181,49 @@ const EventsPage: React.FC = () => {
             />
           )}
 
-          <div className="filter-section bg-gray-100 p-4 rounded-lg flex items-center space-x-4 mb-6">
+          <div className="flex items-center gap-4 bg-gray-100 p-4 rounded-lg mb-6">
+            {/* Search Input */}
             <input
               type="text"
               placeholder="Search Events"
-              className="border px-4 py-2 rounded-md flex-1"
+              className="flex-1 border border-gray-300 px-4 py-2 rounded-md"
             />
-            <select className="border px-4 py-2 rounded-md">
+
+            {/* When Dropdown */}
+            <select className="flex-1 border border-gray-300 px-4 py-2 rounded-md">
               <option value="">When</option>
               <option value="today">Today</option>
               <option value="this-week">This Week</option>
               <option value="this-month">This Month</option>
             </select>
-            <select className="border px-4 py-2 rounded-md">
+
+            {/* Experience Dropdown */}
+            <select className="flex-1 border border-gray-300 px-4 py-2 rounded-md">
               <option value="">Experience</option>
               <option value="beginner">Beginner</option>
               <option value="intermediate">Intermediate</option>
               <option value="advanced">Advanced</option>
             </select>
-            <select className="border px-4 py-2 rounded-md">
+
+            {/* Group Dropdown */}
+            <select className="flex-1 border border-gray-300 px-4 py-2 rounded-md">
               <option value="">Group</option>
               <option value="students">Students</option>
               <option value="faculty">Faculty</option>
               <option value="staff">Staff</option>
             </select>
-            <select className="border px-4 py-2 rounded-md">
+
+            {/* Type Dropdown */}
+            <select className="flex-1 border border-gray-300 px-4 py-2 rounded-md">
               <option value="">Type</option>
               <option value="virtual">Virtual</option>
               <option value="in-person">In-Person</option>
             </select>
+
+            {/* Advanced Filters Button */}
             <button
               onClick={toggleFilter}
-              className="bg-blue-600 text-white px-4 py-2 rounded-md"
+              className="bg-green-700 text-white px-4 py-2 rounded-md hover:bg-green-800 transition"
             >
               Advanced Filters
             </button>
@@ -236,20 +253,30 @@ const EventsPage: React.FC = () => {
             </div>
           )}
 
-          <section className="live-events px-8 py-4">
+          <section className="px-4 py-4">
             <h2 className="text-2xl font-bold mb-4">
               Live Events
               <span className="ml-2 bg-red-500 w-3 h-3 rounded-full animate-ping"></span>
             </h2>
-            <div className="live-events-carousel">
+            <Swiper
+              modules={[Navigation, Pagination]}
+              pagination={{ clickable: true }}
+              navigation={true}
+              spaceBetween={20}
+              slidesPerView={1}
+              breakpoints={{
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+              }}
+              className="live-events-carousel"
+            >
               {liveEvents.map((event) => (
-                <EventCard
-                  key={event.id}
-                  event={event}
-                  onRegister={handleRegister}
-                />
+                <SwiperSlide key={event.event_id}>
+                  <EventCard event={event} onRegister={handleRegister} />
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
 
             <h2 className="text-2xl font-bold mt-8 mb-4">
               Upcoming Events{' '}

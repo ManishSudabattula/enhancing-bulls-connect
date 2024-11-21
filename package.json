@@ -38,6 +38,7 @@
     "react-router-dom": "^6.27.0",
     "redux": "5.0.1",
     "redux-first-history": "^5.2.0",
+    "swiper": "^11.1.15",
     "tsparticles": "^3.5.0"
   },
   "devDependencies": {
