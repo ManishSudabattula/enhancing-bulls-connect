@@ -7,11 +7,11 @@ University of South Florida | Spring 2025
 
 ## 👥 Team Members
 
+- Manish Sudabattula – manishsudabattula@usf.edu 
 - Rakshith Poojary – rpoojary@usf.edu  
 - Voon Hee Lee – voonheelee@usf.edu  
 - Lokeshwar Reddy Yarava – lokeshwarreddy@usf.edu  
-- Deepthi Muttineni – deepthimuttineni@usf.edu  
-- Manish Sudabattula – manishsudabattula@usf.edu  
+- Deepthi Muttineni – deepthimuttineni@usf.edu   
 
 ---
 
